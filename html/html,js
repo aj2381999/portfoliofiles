@@ -1,0 +1,20 @@
+<section class="contact section" id="contact">
+        <h2 class="section-title" data-aos="fade-down">Contact</h2>
+
+        <div class="contact_container bd_grid">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="8651710d-56fe-47a1-bcf3-b1cf5c509bec">
+            <input type="text" id="name" placeholder="Name" name="name" class="control_input" required>
+            <input type="email" id="email" placeholder="Email" name="email" class="control_input" required>
+            <input type="message" id="message" placeholder="Message" name="message" class="control_input" required>
+            <button type="submit" class="control_button">Submit</button>
+          </form>
+          <button onclick="clearContent()" class="control_buttons">Reset</button>
+
+main.js
+//i have added below code
+function clearContent(){
+      document.getElementById('name').value='';
+      document.getElementById('email').value='';
+      document.getElementById('message').value='';
+};
